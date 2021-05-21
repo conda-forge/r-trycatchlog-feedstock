@@ -1,4 +1,4 @@
-{% set version = '1.2.1' %}
+{% set version = "1.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tryCatchLog_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tryCatchLog/tryCatchLog_{{ version }}.tar.gz
-  sha256: f7ecb1ae1a102c60f7e27401810d9237d2389e5dee9a4d3e449422f23ca5888d
+  sha256: 123b16dbd02fc7620b4b3a0cd07c07f6b05fab8f1a0564f9283a05645c947598
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -37,12 +37,10 @@ test:
 about:
   home: https://github.com/aryoda/tryCatchLog
   license: GPL-3.0-only
-  summary: Advanced tryCatch() and try() functions for better error handling (logging, stack
-    trace with source code references and support for post-mortem analysis via dump
-    files).
+  summary: Advanced tryCatch() and try() functions for better error handling (logging, stack trace with source code references and support for post-mortem analysis via dump files).
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:
