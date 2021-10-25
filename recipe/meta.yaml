@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tryCatchLog_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tryCatchLog/tryCatchLog_{{ version }}.tar.gz
-  sha256: 123b16dbd02fc7620b4b3a0cd07c07f6b05fab8f1a0564f9283a05645c947598
+  sha256: 0da89a028d14bb865b9fc17cabdafe3bfafc8b2e10b86965cbaaf28f1151804c
 
 build:
   merge_build_host: true  # [win]
