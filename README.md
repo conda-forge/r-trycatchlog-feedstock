@@ -1,11 +1,11 @@
-About r-trycatchlog
-===================
+About r-trycatchlog-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trycatchlog-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aryoda/tryCatchLog
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trycatchlog-feedstock/blob/main/LICENSE.txt)
 
 Summary: Advanced tryCatch() and try() functions for better error handling (logging, stack trace with source code references and support for post-mortem analysis via dump files).
 
